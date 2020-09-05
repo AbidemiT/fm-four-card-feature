@@ -12,10 +12,10 @@ $blue: hsl(212, 86%, 64%);
 $darkBlue: hsl(234, 12%, 34%);
 $grayishBlue: hsl(229, 6%, 66%);
 $lightGray: hsl(0, 0%, 98%);
-$mobile: 460px;
-$ipad: 768px;
-$ipadPro: 1200px;
-$large: 1201px;
+$mobile: 575.98px;
+$ipad: 767.98px;
+$ipadPro: 1025px;
+$xl: 1200px;
 $desktop: 1440px;
 $lg: 1441px;
 
@@ -26,18 +26,24 @@ $lg: 1441px;
 }
 
 @mixin ipad {
-    @media (min-width: #{$mobile}) {
+    @media (min-width: 576px) and (max-width: #{$ipad}) {
         @content;
     }
 }
+
 @mixin ipadPro {
-    @media (min-width: #{$ipad}) and (max-width: #{$ipadPro}) {
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        @content;
+    }
+}
+@mixin large {
+    @media (min-width: 992px) and (max-width: 1199.98px)  {
         @content;
     }
 }
 
 @mixin desktop {
-    @media (min-width: #{$ipadPro}) and (max-width: #{$desktop}) {
+    @media (min-width: #{$xl}) {
         @content;
     }
 }
