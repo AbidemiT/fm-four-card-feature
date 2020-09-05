@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap);
+
+$Poppins: 'Poppins', sans-serif;
+
+// Primary Colors
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+// Neutral
+$darkBlue: hsl(234, 12%, 34%);
+$grayishBlue: hsl(229, 6%, 66%);
+$lightGray: hsl(0, 0%, 98%);
+$mobile: 460px;
+$ipad: 768px;
+$ipadPro: 1200px;
+$large: 1201px;
+$desktop: 1440px;
+$lg: 1441px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin ipad {
+    @media (min-width: #{$mobile}) {
+        @content;
+    }
+}
+@mixin ipadPro {
+    @media (min-width: #{$ipad}) and (max-width: #{$ipadPro}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$ipadPro}) and (max-width: #{$desktop}) {
+        @content;
+    }
+}

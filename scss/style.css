@@ -1,0 +1,288 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+div,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 460px) {
+  .container {
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #fafafa;
+    padding: 3.5rem 1rem;
+  }
+  .container .header {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .container .header .top-header {
+    font-weight: 200;
+    font-size: inherit;
+    word-spacing: 0.1rem;
+  }
+  .container .header .sub-header {
+    font-weight: 600;
+    font-size: inherit;
+    word-spacing: 0.1rem;
+  }
+  .container .header .p-header {
+    font-size: 0.8rem;
+    color: #a3a5ae;
+  }
+  .container .box-container {
+    width: 80%;
+    margin: 1.2rem auto;
+  }
+  .container .box-container .box {
+    -webkit-box-shadow: 1px 8px 10px 0px #0000002e;
+            box-shadow: 1px 8px 10px 0px #0000002e;
+    border-radius: 0.3rem;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+  }
+  .container .box-container .box h2 {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .container .box-container .box p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+  .container .box-container .box .img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .container .box-container .box .img-container img {
+    margin: 1.5rem 0;
+    height: 40px;
+    width: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    text-align: right;
+  }
+  .container .box-container .supervisor {
+    border-top: 3px solid #45d3d3;
+  }
+  .container .box-container .builder {
+    border-top: 3px solid #ea5353;
+  }
+  .container .box-container .karma {
+    border-top: 3px solid #fcaf4a;
+  }
+  .container .box-container .calculator {
+    border-top: 3px solid #549ef2;
+  }
+}
+
+@media (min-width: 460px) {
+  .header {
+    width: 80%;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .header .top-header {
+    font-weight: 200;
+    font-size: inherit;
+    word-spacing: 0.1rem;
+  }
+  .header .sub-header {
+    font-weight: 600;
+    font-size: inherit;
+    word-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
+  }
+  .header .p-header {
+    font-size: 0.9rem;
+    color: #a3a5ae;
+  }
+  .box-container {
+    width: 80%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 3rem auto;
+  }
+  .box-container .box {
+    width: 100%;
+    -webkit-box-shadow: 1px 8px 10px 0px #0000002e;
+            box-shadow: 1px 8px 10px 0px #0000002e;
+    border-radius: 0.3rem;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+  }
+  .box-container .box h2 {
+    font-size: .7rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .box-container .box p {
+    font-size: .5rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .box-container .box .img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .box-container .box .img-container img {
+    margin: 1.5rem 0;
+    height: 50px;
+    width: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    text-align: right;
+  }
+  .box-container .supervisor {
+    border-top: 3px solid #45d3d3;
+    top: 120px;
+    left: 20px;
+  }
+  .box-container .builder {
+    border-top: 3px solid #ea5353;
+    top: -10px;
+    left: 210px;
+  }
+  .box-container .karma {
+    border-top: 3px solid #fcaf4a;
+    top: 120px;
+    right: 20px;
+  }
+  .box-container .calculator {
+    border-top: 3px solid #549ef2;
+    top: 260px;
+    right: 210px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .container {
+    height: 100vh;
+    background: #fafafa;
+    padding: 3.5rem 1rem;
+  }
+  .container .header {
+    width: 45%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .container .header .top-header {
+    font-weight: 200;
+    font-size: inherit;
+    word-spacing: 0.1rem;
+  }
+  .container .header .sub-header {
+    font-weight: 600;
+    font-size: inherit;
+    word-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  .container .header .p-header {
+    font-size: 0.9rem;
+    color: #a3a5ae;
+  }
+  .container .box-container {
+    position: relative;
+  }
+  .container .box-container .box {
+    position: absolute;
+    width: 350px;
+    -webkit-box-shadow: 1px 8px 10px 0px #0000002e;
+            box-shadow: 1px 8px 10px 0px #0000002e;
+    border-radius: 0.3rem;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+  }
+  .container .box-container .box h2 {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .container .box-container .box p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .container .box-container .box .img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .container .box-container .box .img-container img {
+    margin: 1.5rem 0;
+    height: 50px;
+    width: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    text-align: right;
+  }
+  .container .box-container .supervisor {
+    border-top: 3px solid #45d3d3;
+    top: 120px;
+    left: -90px;
+  }
+  .container .box-container .builder {
+    border-top: 3px solid #ea5353;
+    top: -10px;
+    left: 295px;
+  }
+  .container .box-container .karma {
+    border-top: 3px solid #fcaf4a;
+    top: 120px;
+    right: -90px;
+  }
+  .container .box-container .calculator {
+    border-top: 3px solid #549ef2;
+    top: 260px;
+    right: 290px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
